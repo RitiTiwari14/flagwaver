@@ -86,7 +86,7 @@
     // Wind settings
     var wind         = true,
         windStrength = 200,
-        windDirection = false,
+        windDirection = 360,
         windForce    = new THREE.Vector3( 0, 0, 0 );
 
     // Ball settings
@@ -442,8 +442,8 @@
 
     // Default flag options
     var defaultOptions = {
-        width         : 300,
-        height        : 200,
+        width         : 450,
+        height        : 300,
         mass          : MASS,
         levelOfDetail : 10
     };
@@ -596,7 +596,7 @@
             alphaTest : 0.5,
             color     : 0xffffff,
             specular  : 0x030303,
-            shininess : 0.001, // https://github.com/mrdoob/three.js/issues/7252
+            shininess : 18, // https://github.com/mrdoob/three.js/issues/7252
             metal     : false,
             side      : THREE.DoubleSide
         } );
